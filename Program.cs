@@ -23,11 +23,11 @@ namespace l1
 
             if (CheekPoint_inArea(x, y))
             {
-                Console.WriteLine("ВВеденое значение В области!");
+                Console.WriteLine("Введеное значение В области!");
             }
             else
             {
-                Console.WriteLine("ВВеденное значение ВНЕ области!");
+                Console.WriteLine("Введенное значение ВНЕ области!");
             }
 
             Console.ReadLine();
@@ -38,7 +38,7 @@ namespace l1
             if (y <= 2 && y >= -6 && x <= 6 && x >= -2)
             {
                 double distance = Math.Sqrt(x * x + y * y);
-                if (distance < 2 && (distance > 4 && distance < 6 && x < 6 && x > 4 && y < 0 && y > 6))
+                if (distance < 2 || (distance > 5 && distance < 6 && x < 6 && x > 4 && y < 0 && y > -6))
                 {
                     return false;
                 }
